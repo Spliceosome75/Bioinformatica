@@ -9,18 +9,18 @@ def Crear_reversa_complementaria(secuencia):
         seq_rev.append(nucleotido_comp)
     seq_rev= "".join(seq_rev)
     return seq_rev
-#ln 8- La función "def" crea funciones. Va seguida del nombre de la función, la cuál se aplicara sobre un objeto.
-    #ln 9- Asignamos un diccionario "{}"" al objeto "complementario". Dentro del diccionario asignamos equivalencias 
+#ln 4- La función "def" crea funciones. Va seguida del nombre de la función, la cuál se aplicara sobre un objeto.
+    #ln 5- Asignamos un diccionario "{}"" al objeto "complementario". Dentro del diccionario asignamos equivalencias 
         # con ":" y separamos con "," los terminos o definiciones. 
-    #ln 10- "seq_rev" será una lista, en la que iremos agregando uno a uno los nucleotidos complementarios. Lo 
+    #ln 6- "seq_rev" será una lista, en la que iremos agregando uno a uno los nucleotidos complementarios. Lo 
         # dejamos como una lista "[]" indefinida por ahora.
-    #ln 11- "for" Inicia ciclo!, en este cada nucleotido del objeto al que se le aplica la función (la secuencia original)
+    #ln 7- "for" Inicia ciclo!, en este cada nucleotido del objeto al que se le aplica la función (la secuencia original)
         # se leera en orden reverso gracias a la funcción "reversed". Importante poner el ":" después del "for".
-        #ln 12- Se crea un nucleotido complementario a cada nucleotido asignandole un valor del diccionario "complementario"    
-        #ln 13- Mediante el ".append" se agrega el nucleotido complementario reverso a la lista "seq_rev"
+        #ln 8- Se crea un nucleotido complementario a cada nucleotido asignandole un valor del diccionario "complementario"    
+        #ln 9- Mediante el ".append" se agrega el nucleotido complementario reverso a la lista "seq_rev"
         # Termina el ciclo!
-    #ln 14- Mediante ".join" recreamos el objeto "seq_rev" tal que sea un objeto y en formato texto por el "" en vez de una lista
-    # "return" significa que la función nos dará como outpot "seq_rev" al aplicarse sobre un objeto.
+    #ln 10- Mediante ".join" recreamos el objeto "seq_rev" tal que sea un objeto y en formato texto por el "" en vez de una lista
+    #ln 11- "return" significa que la función nos dará como outpot "seq_rev" al aplicarse sobre un objeto.
 
 # Introducir una secuencia de ADN
 seq1 = "AAATTTCCCGGG"
