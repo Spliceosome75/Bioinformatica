@@ -1,0 +1,58 @@
+#Programa para crear cadena complementaria a una seq de ADN
+
+# Introducir una secuencia de ADN
+seq = "ACTGTGCATG"
+
+# Crear cadena complementaria
+complementario = { "A":"T", "T":"A", "C":"G", "G":"C" }
+
+# Invertir cadena complementaria para que este en 5" a 3"
+rev_seq = list(reversed(seq))
+
+# Imprime cada nucleotido oriiginal y su complementario. Uno junto al otro
+for nucleotido in rev_seq:
+    nucleotido_rev = complementario[nucleotido]
+    print(nucleotido, nucleotido_rev)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Ahora otra forma, uniendo resultado en vez de lista
+
+#Programa para crear cadena complementaria a una seq de ADN
+
+# Introducir una secuencia de ADN
+seq = "ACTGTGCATG"
+
+# Crear cadena complementaria
+complementario = { "A":"T", "T":"A", "C":"G", "G":"C" }
+
+# Invertir cadena complementaria para que este en 5" a 3"
+rev_seq = list(reversed(seq))
+
+seq_rev=[]
+# Imprime cada nucleotido oriiginal y su complementario. Uno junto al otro
+for nucleotido in rev_seq:
+    nucleotido_rev = complementario[nucleotido]
+    seq_rev.append(nucleotido_rev)
+print(seq_rev)
+
+seq_rev= "".join(seq_rev)
+print(seq_rev)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Ahora otra forma pero con una función que creamos
+#Programa para crear cadena complementaria a una seq de ADN
+
+# Crear diccionario de complementariedad
+complementario = { "A":"T", "T":"A", "C":"G", "G":"C" }
+
+# Crear función
+def Crear_reversa_complementaria(secuencia):
+    seq_rev = []
+    for nucleotido in reversed(secuencia):
+        nucleotido_comp = complementario[nucleotido]
+        seq_rev.append(nucleotido_comp)
+    seq_rev= "".join(seq_rev)
+    return seq_rev
+
+# Introducir una secuencia de ADN
+seq1 = "ACTGTGCATG"
+print(Crear_reversa_complementaria(seq1))
