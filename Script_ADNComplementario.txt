@@ -14,7 +14,7 @@ for nucleotido in rev_seq:
     nucleotido_rev = complementario[nucleotido]
     print(nucleotido, nucleotido_rev)
 
-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 Ahora otra forma, uniendo resultado en vez de lista
 
 #Programa para crear cadena complementaria a una seq de ADN
@@ -37,7 +37,7 @@ print(seq_rev)
 
 seq_rev= "".join(seq_rev)
 print(seq_rev)
-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 Ahora otra forma pero con una función que creamos
 #Programa para crear cadena complementaria a una seq de ADN
 
