@@ -52,3 +52,25 @@ if palabra==palabra_inversa:
 else:
     print("La palabra no es palindroma :( ", palabra, palabra_inversa)
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### SITIO DE RESTRICCIÓN ###
+### Busca el sitio de restricción en una secuencia de ADN
+
+## Pedir secuencia al usuario
+secuencia=input("Introduzca una secuencia de ADN: ")
+secuencia=secuencia.upper()
+    # Recordar que el método ".upper" debe ir seguido de un ()
+
+## Pedir sitio de restricción al usuario
+sitio_restriccion=input("Introduzca un sitio de restricción: ")
+sitio_restriccion=sitio_restriccion.upper()
+
+## Reconocer sitio de restricción
+posicion=secuencia.find(sitio_restriccion)+1
+
+## Imprimir posiciión de sitio de restricción si se encuentra
+if posicion==0:
+    print("No se encontró el sitio de restricción especificado en la secuencia :( ")
+else:
+    print("El primer sitio de restricción reconocido en la secuencia se encuentra en el nucleotido con posición:"
+          ,posicion)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
