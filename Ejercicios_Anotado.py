@@ -99,3 +99,19 @@ else:
     print("Disculpa, la temperatura que ingresaste sale de ims registros :(")
     # Es importante poner las temperaturas en orden ya que python revisa una condición una por una
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### DIVIDIR CADENA DE TEXTO ###
+### Escribe un programa que elimine un número determinado de letras, el que se le pida en una variable, 
+### de una cadena de texto e imprima el resultado.
+
+## Pedir cadena de texto al usuario
+texto=input("Introduzca un texto: ")
+
+## Preguntar al usuario cuántas letras desea eliminar
+eliminar=int(input("¿Cuántas letras y espacios dese eliminar del texto? "))
+
+## Crear nuevo texto recortado
+texto_recortado=texto[:-eliminar]
+    # Los cochetes "[]" indican la posición del objeto "texto" a los que nos queremos referir. El ":" indica TODO y "-" contará desde la
+    # posisción final. "eliminar" indicará cuantas letras o espacios desde el final. Es decir conservaremos todo el texto menos lo borrado
+print(texto_recortado)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
