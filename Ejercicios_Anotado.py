@@ -78,3 +78,24 @@ else:
           ,posicion)
     # Lamentablemente ".find" solo regresa la primer posición que encuentre.
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### FRIO O CALIENTE ###
+### Escribe un programa que pregunte al usuario la temperatura actual y que responda diciendo si hace frío o calor
+
+## Preguntar temperatura actual a usuario
+temperatura=int(input("¿Cuál es la temperatura actual en °C?"))
+
+## Comparar temperatura actual con calor o frio
+if temperatura>= 40:
+    print("¡Vaya! Hace mucho calor")
+elif temperatura>= 30:
+    print("Hace calor :(")
+elif temperatura>= 20:
+    print("¡Qué agradable! La temperatura actual es templada")
+elif temperatura>= 10:
+    print("Está haciendo frio!")
+elif temperatura < 10:
+    print("¡Está haciendo muchisimo frío! Hay que abrigarse")
+else:
+    print("Disculpa, la temperatura que ingresaste sale de ims registros :(")
+    # Es importante poner las temperaturas en orden ya que python revisa una condición una por una
+#-----------------------------------------------------------------------------------------------------------------------------------------#
