@@ -1,5 +1,5 @@
-###  Adivinar un número ###
-###Escribe un programa que elija al azar un número entre el uno y el diez, 
+###  ADIVINAR UN NÚMERO ###
+### Escribe un programa que elija al azar un número entre el uno y el diez, 
 ### que le pregunte al jugador un número y que compruebe si has acertado o no.
 
 ## Elegir número, requiere paquetería
@@ -17,4 +17,18 @@ else:
     print("Incorrecto, el número al azar era:", numero_azar)
     # Usar "==" para comparar. Recordar estructura del "if", seguido de condición ":" y resultado eb siguiente columna 
     # indetado. 
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#### PAR O IMPAR ###
+#### Crea un programa que pida un número entero y que devuelva si es par o impar
+
+## Pedir número a usuario
+numero=int(input("Elija un número entero: ")) 
+
+## Verificar si número es par o impar
+residual=numero%2
+if residual==0:
+    print("El número que eligió es un número par")
+else:
+    print("El número que eligió es un número impar")
+    #Se utilizó la operación "%" ya que esta devuelve el residual de una división. Al dividir un número par entre 2 no existe residual.
 #-----------------------------------------------------------------------------------------------------------------------------------------#
