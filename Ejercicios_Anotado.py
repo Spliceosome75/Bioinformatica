@@ -1,3 +1,5 @@
+Link de problemas: https://bioinf.comav.upv.es/courses/intro_python/soluciones.html
+
 ###  ADIVINAR UN NÚMERO ###
 ### Escribe un programa que elija al azar un número entre el uno y el diez, 
 ### que le pregunte al jugador un número y que compruebe si has acertado o no.
