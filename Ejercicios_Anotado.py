@@ -115,3 +115,17 @@ texto_recortado=texto[:-eliminar]
     # posisción final. "eliminar" indicará cuantas letras o espacios desde el final. Es decir conservaremos todo el texto menos lo borrado
 print(texto_recortado)
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### ESCRIBE ASTERISCOS ###
+### Escribe un programa que pida un número e imprima ese mismo número de asteriscos “*”. 
+### (Puedes utilizar la función range)
+
+## Pedir número de asteriscos a escribir a ususario
+numero=int(input("¿Cuántos asteriscos deseas que el programa escriba? "))
+
+## Imprimir numero de asteriscos (pero poniendo un límite para no tronar la computadora)
+if numero <= 100:
+    print("*"*numero)
+else:
+    print("Número demasiado grande :( ")
+    # Multiplicamos el caracter a escribir ""*"" por el número solicitado "* numero"
+#-----------------------------------------------------------------------------------------------------------------------------------------#
