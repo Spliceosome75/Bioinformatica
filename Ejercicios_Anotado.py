@@ -32,3 +32,23 @@ else:
     print("El número que eligió es un número impar")
     #Se utilizó la operación "%" ya que esta devuelve el residual de una división. Al dividir un número par entre 2 no existe residual.
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+#### PALINDROMOS ####
+### Escribe un programa que compruebe si una palabra es palindrómica o no
+
+# Palindrómica= Se escribe igual al derecho y al revés
+
+## Pedir palabra al usuario:
+palabra=input("Escriba una palabra: ")
+
+## Invertir palabra
+palabra_inversa=reversed(palabra)
+palabra_inversa= "".join(palabra_inversa)
+    # "reversed" no genera una cadena de texto por lo que especificamos que la "palabra_inversa" sea una variable tipo
+    # texto "" a la que agregamos ".join" el resultado de aplicar "reversed" a la palabra. 
+
+## Comparar palabras
+if palabra==palabra_inversa:
+    print("La palabra es palindroma! :)", palabra, palabra_inversa)
+else:
+    print("La palabra no es palindroma :( ", palabra, palabra_inversa)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
