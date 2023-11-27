@@ -66,11 +66,15 @@ sitio_restriccion=sitio_restriccion.upper()
 
 ## Reconocer sitio de restricción
 posicion=secuencia.find(sitio_restriccion)+1
+    # El método ".find" sirve para encontrar la posición en la que se encuentra un objeto dentro de otro. Agregamos "+1"
+    # porque python empieza con la primera posición como "0" lo cuál no hace sentido para nosotros.
 
 ## Imprimir posiciión de sitio de restricción si se encuentra
 if posicion==0:
     print("No se encontró el sitio de restricción especificado en la secuencia :( ")
+    # Cuando ".find" no encuentra el objeto regresa valor "0"
 else:
     print("El primer sitio de restricción reconocido en la secuencia se encuentra en el nucleotido con posición:"
           ,posicion)
+    # Lamentablemente ".find" solo regresa la primer posición que encuentre.
 #-----------------------------------------------------------------------------------------------------------------------------------------#
