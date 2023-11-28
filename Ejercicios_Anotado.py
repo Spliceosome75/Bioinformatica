@@ -218,3 +218,17 @@ suma = sum(numeros[desde-1:hasta])
     # ya que por default no incluye el último valor, es decir es un hasta no inclusivo.
 print(suma)
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### CONVERTIR °F A °C ### 
+### Crea una función que convierta de fahrenheit a celsius y otra que lo haga al revés.
+
+## Crear función de °F a °C
+def Convertir_F_a_C(Temp_F):
+    ## Transformar a °C
+    Temp_C=(Temp_F-32)*(5/9)
+    return Temp_C
+
+Temp_F=float(input("Ingrese la temperatura en grados Farenheit: "))
+        # Usamos "float" en vez de "int" ya que aceptaremos valores con punto decimal. 
+resultado=Convertir_F_a_C(Temp_F)
+print("La temperatura equivale a",resultado,"°C")
+#-----------------------------------------------------------------------------------------------------------------------------------------#
