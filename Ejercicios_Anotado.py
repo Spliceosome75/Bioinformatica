@@ -131,3 +131,24 @@ else:
     print("Número demasiado grande :( ")
     # Multiplicamos el caracter a escribir ""*"" por el número solicitado "* numero"
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### ELIMINA LETRAS ### 
+### Escribe un programa que elimine algunas letras de una cadena de texto, las que le des en una lista, 
+### utilizando un bucle for.
+
+## Pedir texto a usuario
+texto_original=input("Introduzca el texto: ")
+
+## Pedir a usuario palabras a eliminar
+eliminar=input("Introduzca la lestras que desea eliminar del texto anterior: ")
+
+## Crear un nuevo texto a partir "texto" que omita las letras contenidas en "eliminar"
+nuevo_texto=""
+for letras in texto_original:
+    if letras not in(eliminar):
+        nuevo_texto+=letras
+    # Analisamos letra por letra del "texto_original" mediante el "for" "in". Si esa "letra" NO se encuentra en las 
+    # letras a "eliminar" entonces la añadimos al "nuevo_texto" mediante el operador "+=". 
+    
+## Imprimir texto nuevo
+print(nuevo_texto)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
