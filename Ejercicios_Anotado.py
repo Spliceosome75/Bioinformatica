@@ -165,3 +165,17 @@ print(numero_reverso)
     # El "numero_reverso" se crea añadiendo carácteres separados por espacio " " (Ojo, hay un espacio dentro de las 
     # comillas). Los caracteres a añadir son los mismos que los del "numero" original pero revertidos "reversed". 
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### TABLAS DE MULTIPLICAR ###
+### Escribe un programa que imprima las tablas de multiplicar hasta el 10
+
+## Crear lista de números a multiplicar
+numeros=[1,2,3,4,5,6,7,8,9,10]
+
+# Crear cada tabla
+for numero_actual in numeros:
+   tabla_del_numero=[numero_actual * numero for numero in numeros]
+   print("La tabla del",numero_actual,"es la siguiente: ",tabla_del_numero)
+   # Utilizamos "for" para analizar cada numero de "numeros" uno por uno. Creamos la variable "tabla_del_numero" que
+   # se creara para cada número "numero_actual" de la lista "numeros". Esta "tabla_de_numero" se deifne como el 
+   # "numero_actual" multiplicado por cada numero "*numero" contenido en la lista numeros "for numero in numeros". 
+#-----------------------------------------------------------------------------------------------------------------------------------------#
