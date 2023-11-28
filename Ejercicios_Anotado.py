@@ -201,3 +201,20 @@ for numero_actual in numeros:
         # texto "str(numero_actual)" e imprimirlo varias veces al ahora si multiplicarlo por su valor numérico. 
         # el " +" " " solo está para agregar un espacio después del numero en su versión de texto, sino lo imprime junto
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+# SUMA LOS PRIMEROS NUMEROS
+# Escribe un programa que sume los números desde 0 a 50 utilizando un bucle for
+
+# Crear lista que contenga números a sumar
+numeros = list(range(1, 50+1))
+
+# Obtener rango desde el usuario
+desde = int(input("Desde: "))
+hasta = int(input("Hasta: "))
+
+# Sumar los números en el rango especificado por el usuario
+suma = sum(numeros[desde-1:hasta])
+    # Solo sumaremos "sum()" los numeros en el rango "[:]" espicificado por el usuario "int(input(""))"
+    # El "-1" es porque Python cuenta posiciones desde 0 y nosotros desde 1. El hasta no requiere el "-1"
+    # ya que por default no incluye el último valor, es decir es un hasta no inclusivo.
+print(suma)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
