@@ -179,3 +179,25 @@ for numero_actual in numeros:
    # se creara para cada número "numero_actual" de la lista "numeros". Esta "tabla_de_numero" se deifne como el 
    # "numero_actual" multiplicado por cada numero "*numero" contenido en la lista numeros "for numero in numeros". 
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### PIRAMIDE DE NUMEROS ### 
+### Escribe un programa que imprima el siguiente patrón:
+#1
+#2 2
+#3 3 3
+#4 4 4 4
+#5 5 5 5 5
+
+## Definir números a imprimir
+numeros=list(range(1,int(input("Introduzca cuántos escalones quiere que tenga la pirámide: "))+1))
+    # numeros será una lista "list()", que ira en una rango "range()" que va desde 1 hasta , el número que
+    # especifíque el usuario "int(input(""))". Debemos agregar el "+1" al input del usuario porque
+    # "range" solo toma los valores hasta uno antes del valor marcado como ultimo del range. 
+
+## Imprimir con for
+for numero_actual in numeros:
+    print((str(numero_actual)+" ")* numero_actual)
+        # Para imprimir varias veces tenemos que multiplicar "*" el "numero_actual" por si mismo, PERO, si hacemos 
+        # esto se imprimirá el resultado de la multiplicación, ASI QUE debemos tomar primero el número como si fuese
+        # texto "str(numero_actual)" e imprimirlo varias veces al ahora si multiplicarlo por su valor numérico. 
+        # el " +" " " solo está para agregar un espacio después del numero en su versión de texto, sino lo imprime junto
+#-----------------------------------------------------------------------------------------------------------------------------------------#
