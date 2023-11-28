@@ -152,3 +152,16 @@ for letras in texto_original:
 ## Imprimir texto nuevo
 print(nuevo_texto)
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### ESCRIBE NUMERO REVERSO ###
+### Escribe un programa que genere el número con las cifras al revés separadas por espacios. 
+### Por ejemplo, si le das “7563” el resultado debería ser “3 6 5 7”.
+
+## Pedir número al usuario:
+numero=input("Introduzca un número: ")
+
+## Revertir el número
+numero_reverso=" ".join(reversed(numero))
+print(numero_reverso)
+    # El "numero_reverso" se crea añadiendo carácteres separados por espacio " " (Ojo, hay un espacio dentro de las 
+    # comillas). Los caracteres a añadir son los mismos que los del "numero" original pero revertidos "reversed". 
+#-----------------------------------------------------------------------------------------------------------------------------------------#
