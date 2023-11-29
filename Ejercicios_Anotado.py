@@ -275,3 +275,24 @@ for intento in range(3):
 # Mostrar el número al azar si no adivinó en los tres intentos
 print("Sin intentos restantes :(")
 print("El número al azar era:", numero_azar)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#### CUENTA PALABRAS ### 
+### Dada una cadena de texto con palabras escribe un programa que cuente el número de veces que aparece cada palabra.
+
+## Pedirle una cadena de texto al usuario
+texto = input("Dame una cadena de texto: ")
+palabras = texto.split()
+
+## Pedirle una palabra al usuario
+palabra_buscada = input("¿Qué palabra buscas?: ")
+
+## Inicializar contador de palabras encontradas
+conteo = 0
+
+## Iterar sobre las palabras en el texto
+for palabra in palabras:
+    if palabra == palabra_buscada:
+        conteo += 1
+
+## Mostrar el número de veces que se encontró la palabra
+print(conteo)
