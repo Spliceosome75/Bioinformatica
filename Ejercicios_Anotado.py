@@ -250,3 +250,28 @@ def minimo_máximo (numeros):
 numeros=[1,2,3,4,5,6,7,8,9]
 resultados=minimo_máximo(numeros)
 print(resultados)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+###  ADIVINAR UN NÚMERO ###
+### Escribe un programa que elija al azar un número entre el uno y el diez, 
+### que le pregunte al jugador un número y que compruebe si has acertado o no.
+
+## Elegir número, requiere paquetería
+numero_azar = 8
+
+for intento in range(3):
+    print("Intento", intento + 1)
+    
+    ## Preguntar número a usuario
+    numero_usuario = int(input("Adivina un número entre el 0 y el 10: "))
+
+    ## Comparar valores e indicar si son el mismo
+    if numero_usuario == numero_azar:
+        print("¡Correcto! Adivinaste el número :)")
+        break
+        # "break" hace que se salga del bucle for en caso de acertar, sino seguiria preguntando
+    else:
+        print("Incorrecto. ¡Inténtalo de nuevo!")
+
+# Mostrar el número al azar si no adivinó en los tres intentos
+print("Sin intentos restantes :(")
+print("El número al azar era:", numero_azar)
