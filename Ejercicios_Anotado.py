@@ -232,3 +232,21 @@ Temp_F=float(input("Ingrese la temperatura en grados Farenheit: "))
 resultado=Convertir_F_a_C(Temp_F)
 print("La temperatura equivale a",resultado,"°C")
 #-----------------------------------------------------------------------------------------------------------------------------------------#
+### MAXIMO Y MINIMO ### 
+### Crea una función que calcule el máximo y el mínimo de una lista de números utilizando un bucle for. 
+### Compara el resultado con el que dan las funciones min y max..
+
+## Crear función
+def minimo_máximo (numeros):
+    minimo=int()
+    maximo=int()
+    for numero_actual in numeros:
+        if numero_actual <= minimo:
+            minimo=numero_actual
+        elif numero_actual> minimo:
+            maximo=numero_actual
+    return minimo, maximo
+
+numeros=[1,2,3,4,5,6,7,8,9]
+resultados=minimo_máximo(numeros)
+print(resultados)
