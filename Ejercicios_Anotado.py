@@ -296,3 +296,24 @@ for palabra in palabras:
 
 ## Mostrar el número de veces que se encontró la palabra
 print(conteo)
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+### FILTRA UNA LISTA DE NUMEROS ### 
+### Escribe una función a la que dada una lista de números y un valor máximo, devuelva una nueva lista con 
+### los números menores o iguales al valor máximo.
+
+# Pide una lista de números 
+entrada_usuario = input("Ingrese una lista de números separados por comas: ")
+lista = [int(numero) for numero in entrada_usuario.split(',')]
+num_max = int(input("Define el número máximo: "))
+
+# Definir la función
+def lista_menores(lista, num_max):
+    lista_menores = []
+    for numero in lista:
+        if numero <= num_max:
+            lista_menores.append(numero)
+    return lista_menores
+
+# Llamar a la función y mostrar el resultado
+resultado = lista_menores(lista, num_max)
+print(resultado)
